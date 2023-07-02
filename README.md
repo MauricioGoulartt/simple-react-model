@@ -1,6 +1,6 @@
 # Nome do Projeto
 
-Descrição curta do projeto.
+YoouTube - boilerplate.
 
 ## Tecnologias Utilizadas
 
@@ -19,7 +19,7 @@ Descrição curta do projeto.
 
 ## Integração com a API
 
-O sistema é integrado com uma API para fornecer dados e funcionalidades adicionais. Durante o processo de login, as credenciais do usuário são enviadas para a API e um token de autenticação é retornado. Esse token é armazenado nos cookies do navegador e utilizado para autenticar todas as solicitações subsequentes à API.
+O sistema é integrado com uma API [https://github.com/MauricioGoulartt/Api-TDD-Clean] para fornecer dados e funcionalidades adicionais. Durante o processo de login, as credenciais do usuário são enviadas para a API e um token de autenticação é retornado. Esse token é armazenado nos cookies do navegador e utilizado para autenticar todas as solicitações subsequentes à API.
 
 Além disso, informações do perfil do usuário são solicitadas à API e armazenadas no estado do sistema para personalização da experiência do usuário.
 
@@ -28,7 +28,7 @@ Além disso, informações do perfil do usuário são solicitadas à API e armaz
 1. Clone o repositório.
 2. Instale as dependências com `npm install`.
 3. Execute o projeto com `npm run dev`.
-4. Acesse o projeto em `http://localhost:3000`.
+4. Acesse o projeto em `http://localhost:3606`.
 
 ## Contribuições
 
@@ -42,5 +42,5 @@ Contribuições são sempre bem-vindas! Se você quiser contribuir para o projet
 
 ## Contato
 
-Se você tiver alguma dúvida ou precisar de mais informações, entre em contato conosco pelo email [seu-email@exemplo.com](mailto:seu-email@exemplo.com).
+Se você tiver alguma dúvida ou precisar de mais informações, entre em contato conosco pelo email [mauriciogoulart.1990@gmail.com](mailto:mauriciogoulart.1990@exemplo.com).
 
