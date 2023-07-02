@@ -8,8 +8,14 @@ import Typography from '@mui/material/Typography'
 import Container from '@mui/material/Container'
 import axios from 'axios'
 import Cookies from 'js-cookie'
+import { useRouter } from 'next/router'
+import { useContext } from 'react'
+import UserContext from '../../contexts/UserContext'
 
 export default function Login() {
+  const router = useRouter()
+  const { setUser } = useContext(UserContext) // Utilize o hook useContext para obter o valor do contexto
+
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault()
     const data = new FormData(event.currentTarget)
@@ -25,13 +31,14 @@ export default function Login() {
         credentials
       )
       const { token } = response.data.token
-      console.log(token)
 
       Cookies.set('token', token)
       axios.defaults.headers.common['Authorization'] = `Bearer ${token}` // setting default header for axios
-
-      const auth = await axios.get('http://localhost:3333/user')
-      console.log(auth)
+      if (response.status === 200) {
+        const userData = await axios.get('http://localhost:3333/user')
+        setUser(userData.data) // Atualizar o estado do usuário com os dados do usuário logado
+        router.push('/')
+      }
     } catch (error: any) {
       if (error.response && error.response.status === 400) {
         window.alert(error.response.data)

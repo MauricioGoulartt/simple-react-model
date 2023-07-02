@@ -1,9 +1,13 @@
+import { useState } from 'react'
+import UserContext, { User } from '../contexts/UserContext'
 import { AppProps } from 'next/app'
 import Head from 'next/head'
 
 function App({ Component, pageProps }: AppProps) {
+  const [user, setUser] = useState<User | null>(null)
+
   return (
-    <>
+    <UserContext.Provider value={{ user, setUser }}>
       <Head>
         <title>YouTube</title>
         <link rel="shortcut icon" href="/img/preto.png" />
@@ -14,7 +18,7 @@ function App({ Component, pageProps }: AppProps) {
         />
       </Head>
       <Component {...pageProps} />
-    </>
+    </UserContext.Provider>
   )
 }
 
