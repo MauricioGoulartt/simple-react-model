@@ -12,9 +12,8 @@ YoouTube - boilerplate.
 ## Funcionalidades
 
 - Login de usuário
-- Navegação em vídeos
-- Inscrições em canais
-- Pesquisa de conteúdo
+- Registro de usuário
+- Get de informações
 - Outras funcionalidades...
 
 ## Integração com a API
