@@ -27,10 +27,6 @@ import { useRouter } from 'next/router'
 
 const drawerWidth = 240
 
-const Icons = styled(IconButton)(({ theme }) => ({
-  margin: '0 0.2rem'
-}))
-
 const Search = styled('div')(({ theme }) => ({
   marginRight: '0.5rem',
   position: 'relative',
@@ -74,17 +70,8 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
   }
 }))
 
-interface Props {
-  /**
-   * Injected by the documentation to work in an iframe.
-   * You won't need it on your project.
-   */
-  window?: () => Window
-}
-
-export default function ResponsiveDrawer(props: Props) {
+export default function ResponsiveDrawer() {
   const router = useRouter()
-  const { window } = props
   const [mobileOpen, setMobileOpen] = React.useState(false)
 
   const handleDrawerToggle = () => {
@@ -125,9 +112,6 @@ export default function ResponsiveDrawer(props: Props) {
     </div>
   )
 
-  const container =
-    window !== undefined ? () => window().document.body : undefined
-
   return (
     <Box sx={{ display: 'flex' }}>
       <CssBaseline />
@@ -159,28 +143,22 @@ export default function ResponsiveDrawer(props: Props) {
             />
           </Search>
 
-          <Icons>
-            <IconButton>
-              <VideoCallRoundedIcon />
-            </IconButton>
-          </Icons>
+          <IconButton>
+            <VideoCallRoundedIcon />
+          </IconButton>
 
-          <Icons>
-            <IconButton>
-              <AppsRoundedIcon />
-            </IconButton>
-          </Icons>
+          <IconButton>
+            <AppsRoundedIcon />
+          </IconButton>
 
-          <Icons>
-            <IconButton>
-              <MoreVertIcon />
-            </IconButton>
-          </Icons>
+          <IconButton>
+            <MoreVertIcon />
+          </IconButton>
 
           <Tooltip title="Login">
             <Avatar
               alt="Remy Sharp"
-              src="/static/images/avatar/1.jpg"
+              src="#"
               style={{ marginLeft: '1rem', cursor: 'pointer' }}
               onClick={() => router.push('/login')}
             />
@@ -194,7 +172,6 @@ export default function ResponsiveDrawer(props: Props) {
       >
         {/* The implementation can be swapped with js to avoid SEO duplication of links. */}
         <Drawer
-          container={container}
           variant="temporary"
           open={mobileOpen}
           onClose={handleDrawerToggle}
