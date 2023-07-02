@@ -6,7 +6,7 @@ YoouTube - boilerplate.
 
 - ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
 - ![React](https://img.shields.io/badge/react.js-%23404d59.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
-- Next.js
+- ![Next.js](https://img.shields.io/badge/Next.js-%23404d59.svg?style=for-the-badge&logo=Next.js&logoColor=%black)
 - Material UI
 
 ## Funcionalidades
