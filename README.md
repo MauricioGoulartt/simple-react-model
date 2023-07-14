@@ -20,6 +20,7 @@ YoouTube - boilerplate.
 ## Integração com a API
 
 O sistema é integrado com uma API https://github.com/MauricioGoulartt/Api-TDD-Clean para fornecer dados e funcionalidades adicionais. Durante o processo de login, as credenciais do usuário são enviadas para a API e um token de autenticação é retornado. Esse token é armazenado nos cookies do navegador e utilizado para autenticar todas as solicitações subsequentes à API.
+Utiliza Context API.
 
 Além disso, informações do perfil do usuário são solicitadas à API e armazenadas no estado do sistema para personalização da experiência do usuário.
 
