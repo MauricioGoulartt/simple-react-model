@@ -8,7 +8,7 @@ YoouTube - boilerplate.
 - ![React](https://img.shields.io/badge/react.js-%23404d59.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 - ![Next.js](https://img.shields.io/badge/Next.js-%23404d59.svg?style=for-the-badge&logo=Next.js&logoColor=%black)
 - ![Material UI](https://img.shields.io/badge/Mui-%23404d59.svg?style=for-the-badge&logo=Mui&logoColor=%black)
-- ![Styled Components](https://img.shields.io/badge/styledcomponents-%23007ACC.svg?style=for-the-badge&logo=styledcomponents&logoColor=red)
+- ![Styled Components](https://img.shields.io/badge/styledcomponents-%23404d59.svg?style=for-the-badge&logo=styledcomponents&logoColor=red)
 
 ## Funcionalidades
 
