@@ -1,6 +1,6 @@
 # Nome do Projeto
 
-YoouTube - boilerplate.
+YouTube Model - boilerplate.
 
 ## Tecnologias Utilizadas
 
